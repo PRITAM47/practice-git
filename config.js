@@ -11,3 +11,11 @@ function getEnv() {
 function getProcessEnv() {
   return process.env;
 }
+
+function checkEnv() {
+  if (getEnv() === "development") {
+    console.log("Development environment");
+  } else {
+    console.log("Production environment");
+  }
+}
