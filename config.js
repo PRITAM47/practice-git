@@ -12,6 +12,10 @@ function getProcessEnv() {
   return process.env;
 }
 
+function gethostname() {
+  return window.location.hostname;
+}
+
 function getConfig() {
   const config = createConfig();
   if (getEnv() === "production") {
