@@ -11,3 +11,11 @@ function getEnv() {
 function getProcessEnv() {
   return process.env;
 }
+
+function getConfig() {
+  const config = createConfig();
+  if (getEnv() === "production") {
+    config.url = "http://production.com";
+  }
+  return config;
+}
