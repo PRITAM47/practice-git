@@ -19,3 +19,11 @@ function getConfig() {
   }
   return config;
 }
+
+function checkEnv() {
+  if (getEnv() === "development") {
+    console.log("Development environment");
+  } else {
+    console.log("Production environment");
+  }
+}
